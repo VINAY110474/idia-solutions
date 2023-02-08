@@ -32,18 +32,21 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
-.login-screen-wrapper{
+
+.login-screen-wrapper {
   height: 100vh;
   background-image: url(https://wallpaperaccess.com/full/3068491.jpg);
   background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.primary-header{
+
+.primary-header {
   font-size: 24px;
   color: rebeccapurple;
 }
