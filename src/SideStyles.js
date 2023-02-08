@@ -1,10 +1,10 @@
-import styled, { css } from 'styled-components';
-import { Link } from 'react-router-dom';
+import styled, { css } from "styled-components";
+import { Link } from "react-router-dom";
 
 export const SidebarContainer = styled.div`
   position: fixed;
   top: 0;
-  width:68px;
+  width: 68px;
   background-color: blue;
   padding-top: 50px;
   height: 100vh;
@@ -45,13 +45,12 @@ export const StyledNavLink = styled(Link)`
   &:hover {
     opacity: 100%;
   }
-    &:hover {
-      text-decoration: underline;
-    }
+  &:hover {
+    text-decoration: underline;
+  }
   &[aria-current] {
-      color: red;
-    }
-  
+    color: red;
+  }
 `;
 
 export const LogoContainer = styled(StyledNavLink)`
@@ -61,7 +60,7 @@ export const LogoContainer = styled(StyledNavLink)`
 
   margin: -7px;
   margin-left: 0px;
-  border-style: ${(props) => (!props.act ? 'solid' : 'none')};
+  border-style: ${(props) => (!props.act ? "solid" : "none")};
   i:hover {
     margin-left: -7px;
     transition: 0.1s;
@@ -72,11 +71,9 @@ export const LogoContainer = styled(StyledNavLink)`
     margin-left: -7px;
   }
   img {
-    width:60px;
-    height:60px;
- 
+    width: 60px;
+    height: 60px;
   }
-
 `;
 
 export const LogoOut = styled(StyledNavLink)`
@@ -88,7 +85,7 @@ export const LogoOut = styled(StyledNavLink)`
 
 //Version 5 de react router
 export const ItemContainer = styled.a`
-  background-colors: ${(props) => (props.active ? 'red' : 'blue')};
+  background-colors: ${(props) => (props.active ? "red" : "blue")};
   display: grid;
   grid-template-columns: max-content max-content;
   column-gap: 1rem;
