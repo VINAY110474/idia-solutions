@@ -30,7 +30,7 @@ import {
             {icons.map(function (item, index) {
                 const Icon = item
               return (
-                <Icon style={{color:'white'}}/>
+            <Icon style={{color:'white'}}/>
               );
             })}
         </SidebarMenuContainer>

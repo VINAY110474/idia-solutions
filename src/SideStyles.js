@@ -24,34 +24,33 @@ export const SidebarMenuContainer = styled.div`
 `;
 
 export const StyledNavLink = styled(Link)`
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 1rem;
+  padding: 1rem 0 0.5rem 1.5rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-color: white;
+  i {
+    font-size: 1.25rem;
+    color: var(--white-color);
+  }
 
-display: grid;
-grid-template-columns: max-content max-content;
-column-gap: 1rem;
-padding: 1rem 0 0.5rem 1.5rem;
-margin-top: 1rem;
-text-decoration: none;
-border-left-style: solid;
-border-left-width: 2px;
-border-color: white;
-i {
-  font-size: 1.25rem;
-  color: var(--white-color);
-}
-
-span {
-  color: var(--white-color);
-  font-weight: 700;
-}
-&:hover {
-  opacity: 100%;
-}
+  span {
+    color: var(--white-color);
+    font-weight: 700;
+  }
   &:hover {
-    text-decoration: underline;
+    opacity: 100%;
   }
- &[aria-current] {
-    color: red;
-  }
+    &:hover {
+      text-decoration: underline;
+    }
+  &[aria-current] {
+      color: red;
+    }
   
 `;
 

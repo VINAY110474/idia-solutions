@@ -6,7 +6,6 @@
     "extends": [
         "plugin:react/recommended",
         "plugin:prettier/recommended",
-        "eslint:recommend",
         "standard"
     ],
     "overrides": [
