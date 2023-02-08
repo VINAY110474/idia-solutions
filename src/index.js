@@ -1,15 +1,11 @@
-import React from 'react';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import history from './history'
-import Template from './Template';
-import ReactDOM from 'react-dom/client';
-import {
-  BrowserRouter,
-  Routes,
-  Route
-} from "react-router-dom";
+import React from "react";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import history from "./history";
+import Template from "./Template";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { render } from "react-dom";
 
 const rootElement = document.getElementById("root");

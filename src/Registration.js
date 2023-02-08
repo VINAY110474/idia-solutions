@@ -1,50 +1,50 @@
-import './App.css'
-import React, { useState } from 'react'
-import DiamondIcon from '@mui/icons-material/Diamond'
-import IconButton from '@mui/material/IconButton'
+import "./App.css";
+import React, { useState } from "react";
+import DiamondIcon from "@mui/icons-material/Diamond";
+import IconButton from "@mui/material/IconButton";
 // import { useHistory } from "react-router-dom"
-import history from './history'
-import FilledInput from '@mui/material/FilledInput'
-import OutlinedInput from '@mui/material/OutlinedInput'
-import InputLabel from '@mui/material/InputLabel'
-import InputAdornment from '@mui/material/InputAdornment'
-import FormHelperText from '@mui/material/FormHelperText'
-import FormControl from '@mui/material/FormControl'
-import TextField from '@mui/material/TextField'
-import Visibility from '@mui/icons-material/Visibility'
-import VisibilityOff from '@mui/icons-material/VisibilityOff'
-import Button from '@mui/material/Button'
-export default function RegistrationForm () {
+import history from "./history";
+import FilledInput from "@mui/material/FilledInput";
+import OutlinedInput from "@mui/material/OutlinedInput";
+import InputLabel from "@mui/material/InputLabel";
+import InputAdornment from "@mui/material/InputAdornment";
+import FormHelperText from "@mui/material/FormHelperText";
+import FormControl from "@mui/material/FormControl";
+import TextField from "@mui/material/TextField";
+import Visibility from "@mui/icons-material/Visibility";
+import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import Button from "@mui/material/Button";
+export default function RegistrationForm() {
   // let history = useHistory()
-  const [username, setUsername] = useState('')
-  const [password, setPassword] = useState('')
-  const [isEnable, setEnable] = useState(true)
-  const [showPassword, setShowPassword] = React.useState(false)
-  const [name, setName] = React.useState('Cat in the Hat')
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [isEnable, setEnable] = useState(true);
+  const [showPassword, setShowPassword] = React.useState(false);
+  const [name, setName] = React.useState("Cat in the Hat");
 
   const handleChange = (event) => {
-    setUsername(event.target.value)
-  }
+    setUsername(event.target.value);
+  };
   const handleChangePWD = (event) => {
-    setPassword(event.target.value)
-  }
-  const handleClickShowPassword = () => setShowPassword((show) => !show)
+    setPassword(event.target.value);
+  };
+  const handleClickShowPassword = () => setShowPassword((show) => !show);
 
   const handleMouseDownPassword = (event) => {
-    event.preventDefault()
-  }
+    event.preventDefault();
+  };
   const handleKeyUp = () => {
-    if (username.length > 0 && password.length > 0) setEnable(false)
-    else setEnable(true)
-  }
+    if (username.length > 0 && password.length > 0) setEnable(false);
+    else setEnable(true);
+  };
   const loginClick = () => {
-    console.log('login button clicked')
-    history.push('/expenses', '_self')
-  }
+    console.log("login button clicked");
+    history.push("/expenses", "_self");
+  };
   return (
     <div className="login-screen-wrapper">
       <div className="title-wrapper">
-        <DiamondIcon sx={{ height: '60px', width: '60px' }} />
+        <DiamondIcon sx={{ height: "60px", width: "60px" }} />
         <span className="primary-header">SINGLE STONE SOLUTIONS</span>
       </div>
       <div className="login-fields-wrapper">
@@ -61,7 +61,7 @@ export default function RegistrationForm () {
               onChange={handleChange}
             />
             <FormControl
-              sx={{ margin: '16px 0' }}
+              sx={{ margin: "16px 0" }}
               fullWidth
               variant="outlined"
               size="small"
@@ -73,7 +73,7 @@ export default function RegistrationForm () {
               <OutlinedInput
                 onChange={handleChangePWD}
                 id="outlined-adornment-password"
-                type={showPassword ? 'text' : 'password'}
+                type={showPassword ? "text" : "password"}
                 value={password}
                 endAdornment={
                   <InputAdornment position="end">
@@ -100,5 +100,5 @@ export default function RegistrationForm () {
         </form>
       </div>
     </div>
-  )
+  );
 }
