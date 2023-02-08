@@ -10,12 +10,7 @@ export const SidebarContainer = styled.div`
   height: 100vh;
   transition: 0.5s;
   z-index: var(--z-fixed);
-
   @media only screen and (min-width: 768px) {
-    padding: 1rem 1rem 0 0;
-    background-color: #4723d9;
-    margin-left: 0px;
-    width: ${(props) => (!props.act ? '180px' : 'var(--nav-width)')};
   }
 `;
 

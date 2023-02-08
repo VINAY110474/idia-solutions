@@ -34,7 +34,7 @@ console.log(items)
         {items && items?.map((item,index)=>{
           {console.log(item)}
           return ( 
-          <Card style={{ mixWidth: 175,backgroundColor:item?.color}} className="card-item">
+          <Card key={index} style={{ mixWidth: 175,backgroundColor:item?.color}} className="card-item">
             <CardContent>
               <Typography sx={{ fontSize: 14,whiteSpace:"nowrap" }} color="text.secondary" gutterBottom>
                 {item?.title}
